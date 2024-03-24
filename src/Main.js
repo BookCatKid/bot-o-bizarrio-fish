@@ -2,7 +2,7 @@ const LichessApi = require("./LichessApi")
 
 const RobotUser = require("./RobotUser")
 const PatzerPlayer = require("./bots/PatzerPlayer")
-const BizarrioFish = require("./bots/BizarrioFish")
+const RandomPlayer = require("./bots/RandomPlayer")
 
 /**
  * Start a RobotUser (lichess account defined by API_TOKEN) that listens for challenges
