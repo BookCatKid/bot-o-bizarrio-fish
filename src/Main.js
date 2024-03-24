@@ -2,6 +2,7 @@ const LichessApi = require("./LichessApi")
 
 const RobotUser = require("./RobotUser")
 const PatzerPlayer = require("./bots/PatzerPlayer")
+const RandomPlayer = require("./bots/RandomPlayer")
 
 /**
  * Start a RobotUser (lichess account defined by API_TOKEN) that listens for challenges
@@ -28,7 +29,7 @@ async function startBot(token, player) {
 async function begin() {
   let links = "<h1>Challenge:</h1><br/>"
 
-  links += await startBot(process.env.API_TOKEN, new PatzerPlayer())
+  links += await startBot(process.env.API_TOKEN, new RandomPlayer())
 
   // wakeup server (not necessary otherwise)
 
